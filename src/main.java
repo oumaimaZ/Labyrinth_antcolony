@@ -1,5 +1,8 @@
 
+import java.util.LinkedList;
+
 public class main {
+	static LinkedList L;
 
 	/**
 	 * 
@@ -10,16 +13,19 @@ public class main {
 
 	public static void main(String[] args) {
 //Fourmis.AfficherMatrice(Fourmis.InitDistance());
-Fourmis.AfficherTable(Fourmis.InitPheromone());
+//Fourmis.AfficherTable(Fourmis.InitPheromone());
 //Fourmis.MajPheromone(0, 1);
 //System.out.println("MAtrice apres maj");
 		
 System.out.println("*************************");
-Fourmis.AfficherMatrice(Fourmis.matriceRepere);
+Fourmis.AfficherMatrice(Fourmis.MatriceRepere);
 System.out.println("*************************");
 
-Fourmis.ChoixChemin(0);
-
+Fourmis.Deplacement();
+ L=Fourmis.parcours;
+ System.out.println("*************************");
+ System.out.println("*************************");
+ System.out.println("parcours"+L);
 
 		
 	}
